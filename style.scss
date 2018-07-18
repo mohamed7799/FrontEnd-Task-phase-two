@@ -1,7 +1,6 @@
 //variables
 $main:#01f597;
 /*fonts*/
-
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 /*css reset*/
 
@@ -83,18 +82,26 @@ img {
     animation-duration: 2.5s;
 }
 
-.book {
+
+
+
+.book,
+.albums,
+.books,
+{
     flex-basis: 50%;
 }
 
-.album {
+.album{
     flex-basis: 40%;
-    .line {
+    .line{
         margin: 0 1rem;
     }
-    &>* {
+
+    & > *{
         display: flex;
     }
+    
 }
 
 .line {
@@ -112,7 +119,7 @@ img {
     font-weight: bold;
 }
 
-.books {
+.books{
     display: flex;
     flex-direction: row;
 }
