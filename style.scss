@@ -1,0 +1,118 @@
+//variables
+$main:#01f597;
+/*fonts*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+/*css reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    min-width: 100%;
+    min-height: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*css reset*/
+
+/*general style*/
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/*navbar*/
+
+.navbar {
+    padding: 2rem 0;
+    background-color: rgb(8, 197, 197);
+}
+
+.navbar__items {
+    width: 30%;
+    margin: auto;
+    color: #f3f3f3;
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    li {
+        cursor: pointer;
+        transition: all .3s ease-in;
+        &:hover {
+            color: $main;
+            text-decoration: underline
+        }
+    }
+}
+
+/*navbar*/
+
+/*content area*/
+
+.content-area {
+    display: flex;
+    padding: 2rem;
+}
+
+.product {
+    border: 1px solid $main;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem;
+    animation-duration: 2.5s;
+}
+
+.book {
+    flex-basis: 50%;
+}
+
+.album {
+    flex-basis: 40%;
+    .line {
+        margin: 0 1rem;
+    }
+    &>* {
+        display: flex;
+    }
+}
+
+.line {
+    margin: 1rem 0;
+    border: .5px solid $main;
+}
+
+.name,
+.price,
+.category,
+.picture,
+.selling-points {
+    margin-bottom: .7rem;
+    color: #336b86;
+    font-weight: bold;
+}
+
+.books {
+    display: flex;
+    flex-direction: row;
+}
